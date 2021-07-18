@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="thumbnail.png" />
+	<title>GANSECT COLLECTION</title>
+	<style>
+		body {margin: auto; overflow: hidden;
+			background-color: rgb(195, 162, 120); 
+			
+			/* border: 6px dotted rgb(190, 135, 63); */
+			padding: 0px;
+		}
+		.screen{margin: auto; width: 100%;padding: 0px;width: 70vh;}
+		.img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width:100%;
+			max-height:100%;
+			border: 6px solid rgb(190, 135, 63);
+			border-bottom:0px solid rgb(195, 162, 120);
+		}
+		.tm  { position: absolute; top: 10px; right: 10px; }
+		.ctr  {color: rgb(12, 54, 54);
+			margin: auto; width:100%;
+			max-width: 1024px;
+			padding-top: 1px;
+			padding-bottom:1px;
+			text-align: center;
+			border: 6px solid rgb(190, 135, 63);
+			/* border-top:6px solid rgb(195, 162, 120); */
+		}
+		.button {
+			background-color: #7a5f25; /* Green */
+			border: 2px solid rgb(109, 64, 5);
+			color: rgb(255, 230, 90);
+			text-align: center;
+			width:4rem;
+			text-decoration: none;
+			font-size: 16px;
+		}
+    </style>
+</head>
+<body>
+
+	<div id="screen" class='screen'>
+		<img id='screen_image' src="images/cyberpunk_ant_cleaned_60.jpg" class='img'>
+
+		<div id="Controls" class="ctr">
+			<button class='button' onclick="changeImage('images/locust_in_flight_sg_100.jpg');">A1</button>
+			<button class='button' onclick="changeImage('images/solitary_skater_300.jpg');">A2</button>
+			<button class='button' onclick="changeImage('images/cyberpunk_ant_cleaned_60.jpg');">A3</button>
+			<button class='button' onclick="changeImage('images/rhinob_250.jpg');">A4</button>
+			<br>
+			<button class='button' onclick="changeImage('images/b1_200.jpg');">B1</button>
+			<button class='button' onclick="changeImage('images/tiger_beethes_300.jpg');">B2</button>
+			<button class='button' onclick="changeImage('images/pond_skater_sg_80.jpg');">B3</button>
+			<button class='button' onclick="changeImage('images/ladybird try 1.jpg');">B4</button>
+			<br>
+			<button class='button' onclick="changeImage('images/downlpm2_200oad.jpg');">C1</button>
+			<button class='button' onclick="changeImage('images/fly500.jpg');">C2</button>
+			<button class='button' onclick="changeImage('images/cockroach_400.jpg');">C3</button>
+			<button class='button' onclick="changeImage('images/wasp300.jpg');">C4</button>
+			<!-- <p>Enjoy the collection :)</p> -->
+		</div>
+
+	</div>
+	
+	<!-- <div class="tm">
+  <input type="checkbox" id="rot_check" name="drone" value="on"
+         checked>
+  <label for="rot_check" style="color:white;">Rotate</label>
+	<input type="checkbox" id="directional_light" name="directional_light" value="on">
+  <label for="directional_light" style="color:white;">Uniform Light</label>
+	</div> -->
+</body>
+
+<script> 
+
+	function changeImage(src)
+	{
+	var img = document.getElementById("screen_image");
+	img.src=src;
+	return false;
+	}
+	
+</script>
+
+</html>
